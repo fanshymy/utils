@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img 
+{
+    margin: 0;
+    padding: 5px;
+}
+fieldset,c 
+{
+    border: none;
+}
+img {
+    display: block;
+}
+address,caption,cite,code,dfn,th,var 
+{
+    font-style: normal;
+    font-weight: normal;
+}
+ul,ol,li 
+{
+    list-style: none;
+}
+body {
+    color: #333;
+    font: 12px PingFang SC, microsoft yahei, sans-serif;
+    background-color: #f3f3f3;
+}
+head{
+    background-color: #31a96c;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+/*清除浮动*/
+.clear {
+    clear: both
+}
+* {
+    box-sizing: border-box
+}
+.border-1px::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+}
+body,html,#app 
+{
+    height: 100%;
+    background: #f5f5f5;
+}
+
+
+input::-webkit-input-placeholder{
+    color:#e6e6e1;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#e6e6e1;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#e6e6e1;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#e6e6e1;
+}
